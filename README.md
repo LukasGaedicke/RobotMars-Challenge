@@ -23,7 +23,7 @@ mvn clean package
 
 This will create a `jar` file inside the target folder and can be executed with:
 ```
-java -jar {NAMEOFCHALLENGE}-0.0.1-SNAPSHOT.jar
+java -jar robot-challenge-0.0.1-SNAPSHOT.jar
 ```
 
 And for execute execute a resquest **POST** in this url: http://localhost:8080/rest/mars/`${COMMAND}`
