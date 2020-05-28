@@ -1,7 +1,7 @@
 # RobotMars-Challenge
 Mars Robot Code Challenge. In this challange, we have an Rest API, developed with **Java 8 + Spring**, in which we have only one **POST** endpoint.
 
-### Context 
+## Context 
 A team of robots must be deployed by NASA to explore a terrain on Mars. This terrain, which is rectangular **(5x5)**, needs to be navigated by robots in such a way that their
 coupled cameras can get a complete view of the region, sending these images back to Earth.
 
@@ -14,7 +14,7 @@ In addition, the possibility of the robot on the ground is defined by a combinat
 
 For example, a valid position for a robot would be (0, 0, N), which means that the robot is positioned on the lower left corner of the land, facing North.
 
-### How to run the Spring Boot applications
+## How to run the Spring Boot applications
 
 Go to root project folder and run: 
 ```
@@ -30,10 +30,38 @@ And for execute execute a resquest **POST** in this url: http://localhost:8080/r
 
 Where `${COMMAND}` is a string containing the **movements commands** to our robot. Are valid commands:
 
-| Command | Action |
-| ------- | ------ |
-| M | Moves robot foward |
-| R | Turns robot right |
-| L | Turns robot left |
-```
+- M (Moves robot foward);
+- R (Turns robot right); 
+- L (Turns robot left).
 
+## Command Examples 
+### Example 01 
+```
+- Input: http://localhost:8080/rest/mars/MMMMMRMMMMM
+- Output: (5,5,E).
+
+Simulation: 
+
+ _ _ _ _ _ _
+|X X X X X > |
+|X           |
+|X           |
+|X           |
+|X           |
+ _ _ _ _ _ _
+ ```
+
+### Example 02 
+ ```
+Input: http://localhost:8080/rest/mars/RMMLMML
+Output: (2,2,W).
+
+Simulation: 
+ _ _ _ _ _ _
+|           |
+|           |
+|           |
+|  <        |
+|X X        |
+ _ _ _ _ _ _
+```
