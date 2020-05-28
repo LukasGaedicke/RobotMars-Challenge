@@ -42,13 +42,13 @@ Where `${COMMAND}` is a string containing the **movements commands** to our robo
 
 Simulation: 
 
- _ _ _ _ _ _
-|X X X X X > |
-|X           |
-|X           |
-|X           |
-|X           |
- _ _ _ _ _ _
+ _ _ _ _ _
+|X X X X > |
+|X         |
+|X         |
+|X         |
+|X         |
+ _ _ _ _ _
  ```
 
 ### Example 02 
@@ -57,11 +57,11 @@ Input: http://localhost:8080/rest/mars/RMMLMML
 Output: (2,2,W).
 
 Simulation: 
- _ _ _ _ _ _
-|           |
-|           |
-|           |
-|  <        |
-|X X        |
- _ _ _ _ _ _
+ _ _ _ _ _
+|         |
+|         |
+|         |
+|  <      |
+|X X      |
+ _ _ _ _ _
 ```
