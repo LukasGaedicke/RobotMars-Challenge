@@ -1,3 +1,4 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/189e4ccd4551f3a94cde/maintainability)](https://codeclimate.com/github/LukasGaedicke/RobotMars-Challenge)
 # RobotMars-Challenge
 Mars Robot Code Challenge. In this challange, we have an Rest API, developed with **Java 8 + Spring**, in which we have only one **POST** endpoint.
 
